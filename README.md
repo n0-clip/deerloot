@@ -1,45 +1,42 @@
-# deerloot
+# Deerloot
 
-## Version
-0.4.0
+Deerloot is a Python-based tool for looking up loot tables in the DayZ "Deer Isle" map. It allows for searching items in an XML file and displaying their associated locations and usages.
 
-## Description
-This is a Python-based tool for use with the DayZ map "Deer Isle" for searching items in an XML file and displaying their associated locations based on tier values. The tool supports case-insensitive and partial term searching. When multiple matches are found, the tool provides a numbered list for users to select the item they are interested in.
+## How to Use Deerloot
 
-## Usage
-1. Ensure you have Python installed on your system.
-2. Download or clone this repository to your local machine.
-3. Navigate to the directory containing the script via the command line.
-4. Run the script using the command `python deerloot.py`.
-5. When prompted, enter the name of the item you're looking for. The search is case-insensitive and accepts partial terms.
-6. If multiple matches are found, you will be presented with a numbered list. Enter the number of the item you're interested in.
-7. The tool will display the locations associated with the chosen item based on tier values.
-8. To quit the program, enter 'q' at the search prompt.
+1. Ensure Python is installed on your system.
+2. Download or clone this repository to your machine.
+3. Via the command line, navigate to the directory with the script.
+4. Run the script with `python deerloot.py`.
+5. Follow the on-screen prompts to search for items.
+6. If multiple matches are found, choose from the provided list.
+7. Locations and usages for the chosen item will be displayed.
+8. Enter 'q' at the search prompt to quit.
 
-## To-Do
-- Implement colour-coded output based on original map tier list.
-- Add support for more maps.
-- Perhaps an option to go into more detail about the item and where it's found.
-- Fix entries with no loot location info from showing as a search result.
-- Error handling, input validation, xml parsing efficiency, modularity
+## Upcoming Features
 
-# Changelog
-Version 0.4.0 - June 2023
-## New Features:
-The print_tier_locations function now also prints the usage information of each item.
-## Improvements:
-Updated the print_tier_locations function to extract and print the 'usage' tags of each item from the XML file.
-This update enhances the functionality of the print_tier_locations function by adding the ability to display the usage information for each item in addition to its tier locations. This makes the output of the script more informative for the user.
+- Color-coded output based on map tier list.
+- Support for additional maps.
+- Detailed information about items and their locations.
+- Improved handling for entries without location information.
+- Enhanced error handling and code modularity.
 
-Version 0.3.0 - June 2023
-## New Features:
-Added a new function load_tier_locations to load tier locations from a JSON file.
-Added a new function get_user_choice to ask the user to choose a number within a given range and validate the input.
-## Improvements:
-Modified the search_item function to use the get_user_choice function for user input and to accept the XML root as a parameter.
-Modified the print_tier_locations function to accept a dictionary of tier locations as a parameter.
-## Bug Fixes:
-Fixed a bug where the print_tier_locations function was called with one argument instead of two.
-## Other Changes:
-The tier locations are now stored in a separate JSON file for easier updates and better separation of data and code.
-Added error handling for file reading and parsing operations.
+## Changelog
+
+**Version 0.4.0 - June 18 2023**
+- New Feature: Usage information of each item is now displayed.
+- Improvement: Enhanced XML parsing to include item usage.
+
+**Version 0.3.0 - June 18 2023**
+- New Features: Added functions for loading tier locations from JSON and for user input validation.
+- Improvement: Refactored main functions for improved modularity and error handling.
+- Bug Fix: Resolved argument mismatch in function call.
+- Other: Tier locations are now stored separately for easier updates.
+
+**Version 0.2.0 - June 18 2023**
+- New Feature: Partial term search enabled for more flexible item lookup.
+- Improvement: Enhanced search_item function for improved usability.
+- Bug Fix: Resolved an issue where items without location information were showing as results.
+
+**Version 0.1.0 - June 18 2023**
+- Initial release: Basic item search and location display functionality implemented.
