@@ -4,7 +4,7 @@
 0.2.0
 
 ## Description
-This is a Python-based tool for searching items in an XML file and displaying their associated locations based on tier values. The tool supports case-insensitive and partial term searching. When multiple matches are found, the tool provides a numbered list for users to select the item they are interested in.
+This is a Python-based tool for use with the DayZ map "Deer Isle" for searching items in an XML file and displaying their associated locations based on tier values. The tool supports case-insensitive and partial term searching. When multiple matches are found, the tool provides a numbered list for users to select the item they are interested in.
 
 ## Usage
 1. Ensure you have Python installed on your system.
@@ -19,4 +19,5 @@ This is a Python-based tool for searching items in an XML file and displaying th
 ## To-Do
 - Implement colour-coded output based on original map tier list.
 - Add support for more maps.
-- Perhaps an option to go into more detail about the item and where it's found
+- Perhaps an option to go into more detail about the item and where it's found.
+- Fix entries with no loot location info from showing as a search result.
