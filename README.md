@@ -1,7 +1,7 @@
 # daz's deerloot
 
 ## Version
-0.2.0
+0.3.0
 
 ## Description
 This is a Python-based tool for use with the DayZ map "Deer Isle" for searching items in an XML file and displaying their associated locations based on tier values. The tool supports case-insensitive and partial term searching. When multiple matches are found, the tool provides a numbered list for users to select the item they are interested in.
@@ -21,3 +21,18 @@ This is a Python-based tool for use with the DayZ map "Deer Isle" for searching 
 - Add support for more maps.
 - Perhaps an option to go into more detail about the item and where it's found.
 - Fix entries with no loot location info from showing as a search result.
+- Error handling, input validation, xml parsing efficiency, modularity
+
+# Changelog
+Version 0.3.0 - June 2023
+## New Features:
+Added a new function load_tier_locations to load tier locations from a JSON file.
+Added a new function get_user_choice to ask the user to choose a number within a given range and validate the input.
+## Improvements:
+Modified the search_item function to use the get_user_choice function for user input and to accept the XML root as a parameter.
+Modified the print_tier_locations function to accept a dictionary of tier locations as a parameter.
+## Bug Fixes:
+Fixed a bug where the print_tier_locations function was called with one argument instead of two.
+## Other Changes:
+The tier locations are now stored in a separate JSON file for easier updates and better separation of data and code.
+Added error handling for file reading and parsing operations.
