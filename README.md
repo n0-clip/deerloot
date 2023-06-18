@@ -1,14 +1,15 @@
-# deerloot
+# deerloot 0.2.0
 a loot table lookup tool for DayZ's "Deer Isle" map
 
 TODO:
 
-Less strict search terms (case insensitive, partial terms)
+~~Less strict search terms (case insensitive, partial terms)~~
+~~Loop back to search prompt~~
 Colour coded output based on original map tier list
 Support for more maps?
-Loop back to search prompt
 
 USAGE:
 
 > python deerloot.py
-input exact table name, case sensitive for now
+
+input search term, get results, go loot!
