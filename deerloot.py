@@ -50,16 +50,22 @@ def search_item(root, tier_locations):
             print_tier_locations(matches[choice], tier_locations)
 
 def print_tier_locations(type_tag, tier_locations):
-    """Print the tier locations of the given item."""
-    print(f"\n Locations for {type_tag.get('name')}:")
+    """Print the tier locations of a given type tag."""
+    print(f"\nLocations for {type_tag.get('name')}:")
+    
+    # Print usage information
+    usages = [usage.get('name') for usage in type_tag.findall('usage')]
+    print(f"Usages: {', '.join(usages)}")
 
+    # Print tier locations
     for value in type_tag.findall('value'):
         tier = value.get('name')
         if tier in tier_locations:
             print(f"{tier}: {', '.join(tier_locations[tier])}")
 
+
 if __name__ == "__main__":
-    print("daz's 'deerloot' Version: 0.3.0")
+    print("deerloot 0.4.0")
 
     tier_locations = load_tier_locations()
 

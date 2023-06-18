@@ -24,6 +24,13 @@ This is a Python-based tool for use with the DayZ map "Deer Isle" for searching 
 - Error handling, input validation, xml parsing efficiency, modularity
 
 # Changelog
+Version 0.4.0 - June 2023
+## New Features:
+The print_tier_locations function now also prints the usage information of each item.
+## Improvements:
+Updated the print_tier_locations function to extract and print the 'usage' tags of each item from the XML file.
+This update enhances the functionality of the print_tier_locations function by adding the ability to display the usage information for each item in addition to its tier locations. This makes the output of the script more informative for the user.
+
 Version 0.3.0 - June 2023
 ## New Features:
 Added a new function load_tier_locations to load tier locations from a JSON file.
