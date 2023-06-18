@@ -59,7 +59,7 @@ def print_tier_locations(type_tag, tier_locations):
             print(f"{tier}: {', '.join(tier_locations[tier])}")
 
 if __name__ == "__main__":
-    print("daz's 'deerloot' Version: 0.2.0")
+    print("daz's 'deerloot' Version: 0.3.0")
 
     tier_locations = load_tier_locations()
 
