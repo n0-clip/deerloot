@@ -1,7 +1,7 @@
-# daz's deerloot
+# deerloot
 
 ## Version
-0.3.0
+0.4.0
 
 ## Description
 This is a Python-based tool for use with the DayZ map "Deer Isle" for searching items in an XML file and displaying their associated locations based on tier values. The tool supports case-insensitive and partial term searching. When multiple matches are found, the tool provides a numbered list for users to select the item they are interested in.
